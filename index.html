@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>My weather application Jo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body class="bubblegum-sans-regular">
+    <div id="container">
+      <form id="search-form">
+        <header >
+          <form >
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              class="search-city"
+              id="search-input"
+            />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+        </header>
+        <main>
+          <div class="current-weather">
+            <div>
+              <h1 id="city-name">Paris</h1>
+              <p>
+                <span id = "current-time">
+                Saturday 15:32 </span>
+                , moderate rain <br />
+                Humidity: <strong class="data">87%</strong>, Wind:
+                <strong class="data">7.2km/h</strong>
+              </p>
+            </div>
+            <div class="current-temperature">
+              <span id="sun">☀️</span> 
+              <span id="temperature">14</span>
+              <span id="unit">°C</span>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="#" target="_blank" class="link">Joh-Hanna</a> and is
+            <a href="#" target="_blank" class="link"> on GitHub</a> and
+            <a href="#" target="_blank" class="link">hosted on Netlify</a>
+          </p>
+        </footer>
+      </form>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
